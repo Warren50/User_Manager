@@ -1,0 +1,31 @@
+<div class="card-header bg-primary text-white">
+    <h4>Ajouter un Menbre</h4>
+</div>
+<div class="card-body">
+    <form (submit)="ajouter($event)">
+        <div class="form-row">
+          <div class="col">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" class="form-control" id="nom" placeholder="Nom" [(ngModel)]="nom">
+          </div>
+          <div class="col">
+              <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="email">
+          </div>
+        </div>
+        <hr>
+        <div class="form-row">
+            <div class="col">
+                <label for="statut">Statut</label>
+                <input type="text" name="statut" class="form-control" id="statut" placeholder="statut" [(ngModel)]="statut">
+              </div>
+              <div class="col">
+                  <label for="mdp">Password</label>
+                <input type="password" name="mdp" class="form-control" id ="mdp"  placeholder="Password" [(ngModel)]="mdp">
+              </div>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-success">Valider</button>&nbsp;
+        <button typre="reset" class="btn btn-danger">Annuler</button>
+      </form>
+</div>
